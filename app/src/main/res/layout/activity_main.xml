@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <!--<android.support.design.widget.AppBarLayout/>-->
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme ="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            app:titleTextColor="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+            <!--android:background="?att/actionBarSize"-->
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+            >
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:paddingLeft="16sp"-->
+    <!--android:paddingRight="16sp"-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/weather_container"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/degree_symbol"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="bottom|end"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:text="°F"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="24sp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/temprature"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="bottom|end"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:text="Temp"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="24sp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/location"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="bottom|end"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:text="City"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="24sp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/weather_condition"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="bottom|end"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:text="weather_condition"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="24sp"/>-->
+        <!---->
+        <!--<ImageView-->
+            <!--android:id="@+id/weather_condition_icon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!---->
+    <!--<ProgressBar-->
+        <!--android:id="@+id/weather_progress_bar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:indeterminate="true"-->
+        <!--android:indeterminateTint="@color/colorPrimaryDark"-->
+        <!--android:indeterminateTintMode="src_atop"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+    <!---->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="start|bottom"-->
+        <!--android:layout_marginBottom="16dp">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/location_field"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".75"-->
+            <!--android:backgroundTint="@color/colorAccent"-->
+            <!--android:hint="@string/app_name"-->
+            <!--android:singleLine="true"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@drawable/ic_launcher_background"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end|bottom"-->
+        <!--android:src="@drawable/ic_my_icon"-->
+        <!--android:layout_margin="16dp" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
